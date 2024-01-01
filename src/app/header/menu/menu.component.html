@@ -1,7 +1,17 @@
 <mat-toolbar color="primary">
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+  <button mat-icon-button [matMenuTriggerFor]="menu" >
     <mat-icon>menu</mat-icon>
   </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <mat-icon>dialpad</mat-icon>
+      <span>Menu</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>dialpad</mat-icon>
+      <span>Presupuesto</span>
+    </button>
+  </mat-menu>
   <span>Shoes-Admin</span>
   <span class="example-spacer"></span>
   <mat-icon>share</mat-icon>
