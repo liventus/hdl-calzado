@@ -1,0 +1,10 @@
+<div [ngSwitch]="opcionSeleccionada">
+  {{opcionSeleccionada}}
+  <app-inicio-component *ngSwitchCase="'inicio'"></app-inicio-component>
+  <app-presupuesto-component *ngSwitchCase="'presupuesto'"></app-presupuesto-component>
+  <!-- Otros casos según sea necesario -->
+  <div *ngSwitchDefault>Contenido por defecto</div>
+</div>
+
+
+
