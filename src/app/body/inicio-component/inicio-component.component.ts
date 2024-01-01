@@ -8,7 +8,7 @@ import {MenuService} from "../../menu.service";
   imports: [],
   templateUrl: './inicio-component.component.html',
   styleUrl: './inicio-component.component.css',
-  providers: [MenuService]
+
 })
 export class InicioComponentComponent {
 

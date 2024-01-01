@@ -7,7 +7,7 @@ import {MenuService} from "../../menu.service";
   imports: [],
   templateUrl: './presupuesto-component.component.html',
   styleUrl: './presupuesto-component.component.css',
-  providers: [MenuService]
+
 })
 export class PresupuestoComponentComponent {
 

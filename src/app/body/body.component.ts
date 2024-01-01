@@ -23,7 +23,7 @@ import {NgZone} from '@angular/core';
     NgForOf,
     NgComponentOutlet
   ],
-  providers: [MenuService],
+
   templateUrl: './body.component.html',
   styleUrl: './body.component.css',
 
