@@ -1,22 +1,3 @@
-<mat-toolbar color="primary">
-  <button mat-icon-button [matMenuTriggerFor]="menu" >
-    <mat-icon>menu</mat-icon>
-  </button>
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item (click)="cambiarPantalla('inicio')" [ngClass]="{'opcion-activa': opcionSeleccionada === 'inicio'}">
-      <mat-icon>dialpad</mat-icon>
-      <span>Menu</span>
-    </button>
-    <button mat-menu-item (click)="cambiarPantalla('presupuesto')" [ngClass]="{'opcion-activa': opcionSeleccionada === 'presupuesto'}">
-      <mat-icon>dialpad</mat-icon>
-      <span>Presupuesto</span>
-    </button>
-  </mat-menu>
-  <span>Shoes-Admin</span>
-  <span class="example-spacer"></span>
-  <mat-icon>share</mat-icon>
-</mat-toolbar>
-
 
 
 

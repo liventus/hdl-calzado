@@ -1,1 +1,19 @@
-<app-menu></app-menu>
+<mat-toolbar color="primary">
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+  <ul>
+    <li *ngFor="let rout of routes">
+      <a [routerLink]="[rout.path]" routerLinkActive="active">{{rout.name}}</a>
+    </li>
+  </ul>
+
+  </mat-menu>
+  <span>Shoes-Admin</span>
+  <span class="example-spacer"></span>
+  <mat-icon>share</mat-icon>
+</mat-toolbar>
+<router-outlet></router-outlet>
+
+

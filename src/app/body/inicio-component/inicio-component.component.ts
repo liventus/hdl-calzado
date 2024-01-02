@@ -10,6 +10,6 @@ import {MenuService} from "../../menu.service";
   styleUrl: './inicio-component.component.css',
 
 })
-export class InicioComponentComponent {
+export default class InicioComponentComponent {
 
 }

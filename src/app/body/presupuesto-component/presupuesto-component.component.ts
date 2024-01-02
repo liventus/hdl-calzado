@@ -9,6 +9,6 @@ import {MenuService} from "../../menu.service";
   styleUrl: './presupuesto-component.component.css',
 
 })
-export class PresupuestoComponentComponent {
+export default class PresupuestoComponentComponent {
 
 }
