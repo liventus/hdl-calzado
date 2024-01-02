@@ -3,9 +3,12 @@
     <mat-icon>menu</mat-icon>
   </button>
   <mat-menu #menu="matMenu">
-  <ul>
+  <ul style="list-style: none; padding: 0; margin: 0;">
     <li *ngFor="let rout of routes">
-      <a [routerLink]="[rout.path]" routerLinkActive="active">{{rout.name}}</a>
+      <button mat-menu-item [routerLink]="[rout.path]" routerLinkActive="active">
+        <mat-icon>dialpad</mat-icon>
+        <span>{{rout.name}}</span>
+      </button>
     </li>
   </ul>
 
