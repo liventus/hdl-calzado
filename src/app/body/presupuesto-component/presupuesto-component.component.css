@@ -10,5 +10,21 @@
   flex-wrap: wrap;
 }
 
+.card-custom {
+  max-width: 400px;
+  margin: 20px;
+
+}
+
+@media (max-width: 400px) {
+
+  .card-custom {
+    margin: 1px;
+    max-width: 380px;
+  }
+
+}
+
+
 
 
