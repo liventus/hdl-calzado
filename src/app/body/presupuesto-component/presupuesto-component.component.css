@@ -18,6 +18,13 @@
   margin: 20px;
 
 }
+
+.card-custom-header1 {
+  max-width: 800px;
+  min-width: 400px;
+  margin: 20px;
+
+}
 .card-custom-title {
   max-width: 800px;
   margin: 20px;
