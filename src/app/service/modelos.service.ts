@@ -11,17 +11,17 @@ export class ModelosService {
   constructor(private firestore: Firestore) { }
 
   addPlace(place: Modelo) {
-    const placeRef = collection(this.firestore, 'modelos');
+    const placeRef = collection(this.firestore, 'costoDeModelos');
     return addDoc(placeRef, place);
   }
 
   getPlaces(): Observable<Modelo[]> {
-    const placeRef = collection(this.firestore, 'modelos');
+    const placeRef = collection(this.firestore, 'costoDeModelos');
     return collectionData(placeRef, { idField: 'id' }) as Observable<Modelo[]>;
   }
 
   deletePlace(place: Modelo) {
-    const placeDocRef = doc(this.firestore, `modelos/${place.id}`);
+    const placeDocRef = doc(this.firestore, `costoDeModelos/${place.id}`);
     return deleteDoc(placeDocRef);
   }
 

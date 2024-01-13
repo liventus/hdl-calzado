@@ -1,5 +1,5 @@
 {
-  "hosting": [
+  "hosting":
     {
       "public": "dist/hdl-calzado/browser",
       "ignore": [
@@ -13,15 +13,10 @@
           "destination": "/index.html"
         }
       ]
-    },
-    {
-      "target": "hdl-calzado",
-      "source": ".",
-      "frameworksBackend": {}
     }
-  ],
+  ,
   "firestore": {
     "rules": "firestore.rules",
-    "indexes": "y"
+    "indexes": "firestore.indexes.json"
   }
 }
