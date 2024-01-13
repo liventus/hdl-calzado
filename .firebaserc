@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "administracion-calzado"
+  },
+  "targets": {
+    "administracion-calzado": {
+      "hosting": {
+        "hdl-calzado": [
+          "administracion-calzado"
+        ]
+      }
+    }
   }
 }

@@ -89,6 +89,23 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "hdl-calzado:build:production",
+              "serveTarget": "hdl-calzado:serve:production"
+            },
+            "development": {
+              "buildTarget": "hdl-calzado:build:development",
+              "serveTarget": "hdl-calzado:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }

@@ -8,6 +8,8 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatRippleModule} from "@angular/material/core";
 import {MatInputModule} from "@angular/material/input";
 import {FormsModule} from "@angular/forms";
+import { ModelosService } from "../../service/modelos.service";
+import Modelo from "../../interfaces/modelo.interface";
 
 
 @Component({
@@ -33,6 +35,10 @@ export default class PresupuestoComponentComponent implements OnInit{
 
 
 
+  constructor(private modeloService: ModelosService) {
+  }
+
+
   longText = `The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog
   from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was
   originally bred for hunting.`;
@@ -41,6 +47,11 @@ export default class PresupuestoComponentComponent implements OnInit{
   dataSource = ELEMENT_DATA;
 
   ngOnInit(): void {
+    this.modeloService.getPlaces().subscribe(modelo =>{
+      console.log(modelo);
+    })
+
+
   }
 }
 export interface PeriodicElement {
