@@ -43,7 +43,7 @@ export default class PresupuestoComponentComponent implements OnInit{
   from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was
   originally bred for hunting.`;
 
-  displayedColumns: string[] = ['position', 'material', 'precio'];
+  displayedColumns: string[] = ['material', 'precio'];
   dataSource = ELEMENT_DATA;
 
   ngOnInit(): void {
@@ -56,15 +56,13 @@ export default class PresupuestoComponentComponent implements OnInit{
 }
 export interface PeriodicElement {
   material: string;
-  position: number;
   precio: number;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, material: 'cuero', precio: 1.02},
-  {position: 2, material: 'cuero', precio: 1.02},
-  {position: 3, material: 'cuero', precio: 1.02},
-  {position: 4, material: 'cuero', precio: 1.02}
+  { material: 'COSTO TOTAL MATERIAL', precio: 28.87},
+  { material: 'COSTO TOTAL S/IGV', precio: 34.64},
+  { material: 'TOTAL', precio: 40.88}
 ];
 
 
