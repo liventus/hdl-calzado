@@ -10,9 +10,9 @@ import {MatInputModule} from "@angular/material/input";
 import {FormsModule} from "@angular/forms";
 import { ModelosService } from "../../service/modelos.service";
 import CostoModelo from "../../interfaces/costomodelo.interface";
-import {Timestamp} from "rxjs";
-import firebase from 'firebase/app';
+
 import 'firebase/firestore';
+
 
 
 @Component({
@@ -44,8 +44,11 @@ export default class PresupuestoComponentComponent implements OnInit{
     this.modeloService.getPlaces().subscribe(x =>{
       console.log(x);
       this.costosdeModelos = x
+      console.log(x);
     })
   }
+
+
 
 
 }

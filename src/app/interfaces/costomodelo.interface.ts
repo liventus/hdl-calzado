@@ -1,5 +1,5 @@
-import {Timestamp} from "rxjs";
-import firebase from "firebase/app";
+import { Timestamp } from 'firebase/firestore';
+
 
 
 export default interface CostoModelo {
@@ -10,5 +10,5 @@ export default interface CostoModelo {
   description: string;
   image: string;
   resumen: any[];
-  fecha: Date | null;
+  fecha: Timestamp;
 }
