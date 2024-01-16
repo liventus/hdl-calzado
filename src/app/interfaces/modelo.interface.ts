@@ -2,12 +2,9 @@ import { Timestamp } from 'firebase/firestore';
 
 
 
-export default interface CostoModelo {
+export default interface Modelo {
   id?: string;
   modelo: string;
-  codigoModelo: String;
-  nombreModelo: String;
-  urlimg:String;
   latitude: number;
   longitude: number;
   description: string;

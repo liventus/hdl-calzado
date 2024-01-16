@@ -41,9 +41,10 @@ export default class PresupuestoComponentComponent implements OnInit{
   }
   displayedColumns: string[] = ['resumen', 'monto'];
   ngOnInit(): void {
-    this.modeloService.getPlaces().subscribe(x =>{
+    this.modeloService.getCostoModelos().subscribe(x =>{
       console.log(x);
       this.costosdeModelos = x
+
       console.log(x);
     })
   }

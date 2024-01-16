@@ -9,16 +9,15 @@
   <mat-card class="card-custom"  *ngFor="let x of costosdeModelos">
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>{{ x.modelo }}</mat-card-title>
-      <mat-card-subtitle>JANE 6812</mat-card-subtitle>
+      <mat-card-title>{{ x.codigoModelo }}</mat-card-title>
+      <mat-card-subtitle>{{ x.nombreModelo }}</mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
-      SERIE 21-32,
       <p>
         FECHA ACTUALIZADA : {{x.fecha.toDate()}}
       </p>
     </mat-card-content>
-    <img mat-card-image src="https://farwest.pe/wp-content/uploads/2021/05/ALITO21022-22.jpg" >
+    <img mat-card-image src="{{ x.urlimg }}" >
 
     <table mat-table [dataSource]="x.resumen" class="mat-elevation-z8">
       <ng-container matColumnDef="resumen">
